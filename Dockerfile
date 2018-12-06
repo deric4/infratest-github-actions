@@ -13,7 +13,7 @@ LABEL "com.github.actions.color"="gray-dark"
 RUN pip install --upgrade pip==18.0 && \
 	pip install pipenv
 
-RUN pipenv install
+RUN pipenv install --system
 
 COPY entrypoint.sh /entrypoint.sh
 
